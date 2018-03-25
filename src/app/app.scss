@@ -1,6 +1,35 @@
 // http://ionicframework.com/docs/theming/
 
+.bgimg {  
+    background: url(../assets/imgs/back.gif);  
+    background-repeat: repeat;  
+    z-index: -1;
+    
+}  
+.buttons{
+    margin-top: 200px;
+    border-color: color($colors, danger);
+    border-radius: 14px;
+}
+ion-title {
 
+    text-align: center;
+    background-color: tomato;
+  }
+  .head{
+      font-family: 'Times New Roman', Times, serif;
+     font-style: oblique;
+      color: red;
+      text-align: center;
+      z-index: 1;
+  }
+  .delIcon{
+    position: absolute;
+    margin-left: 5%;
+    margin-top:5px;
+    color: rgb(235, 18, 18);
+    z-index: 10;
+}
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
