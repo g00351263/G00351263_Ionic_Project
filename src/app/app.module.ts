@@ -4,18 +4,27 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import {HttpModule } from '@angular/http';
 
+
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { CameraPage } from '../pages/camera/camera';
-import { MapPage } from '../pages/map/map';
 import { NewsPage } from '../pages/news/news';
 import { Camera } from '@ionic-native/camera';
+import {
+  GoogleMaps,
+  GoogleMap,
+  GoogleMapsEvent,
+  GoogleMapOptions,
+  CameraPosition,
+  MarkerOptions,
+  Marker
+ } from '@ionic-native/google-maps';
 
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
 import { NewsProvider } from '../providers/news/news';
+import { SplashScreen } from '@ionic-native/splash-screen';
+import { StatusBar } from '@ionic-native/status-bar';
+import { HomePage } from '../pages/home/home';
 
 @NgModule({
   declarations: [
@@ -25,13 +34,13 @@ import { NewsProvider } from '../providers/news/news';
     HomePage,
     TabsPage,
     CameraPage,
-    MapPage,
     NewsPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpModule
+    HttpModule,
+    
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -41,15 +50,15 @@ import { NewsProvider } from '../providers/news/news';
     HomePage,
     TabsPage,
     CameraPage,
-    MapPage,
-    NewsPage
+    NewsPage    
   ],
   providers: [
     StatusBar,
     SplashScreen,
     Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    NewsProvider
+    NewsProvider,
+    GoogleMaps,
   ]
 })
 export class AppModule {}

@@ -16,12 +16,14 @@
 <ion-content padding class="bgimg">
   <ion-list>
     <ion-item text-wrap *ngFor="let new of news">
-        <ion-thumbnail item-start>
-        <ion-img  src="{{new.urlToImage}}"></ion-img>
-      </ion-thumbnail>
-    <h2>{{new.title}}</h2>
-    <p>{{new.description}}</p>
 
-  </ion-item>     
-    </ion-list>
+      <h2>{{new.source.name}}</h2>
+      <h2>{{new.author}}</h2>
+      <h1>{{new.title}}</h1>
+      <p>{{new.description}}</p>
+      <ion-card>
+          <img src="{{new.urlToImage}}"/>
+        </ion-card>
+    </ion-item>
+  </ion-list>
 </ion-content>

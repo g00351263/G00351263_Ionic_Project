@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { CameraPage } from '../camera/camera'
-import { MapPage } from '../map/map';
 import { NewsPage } from '../news/news';
 
 @Component({
@@ -17,9 +16,7 @@ export class HomePage {
   openCame(){
     this.navCtrl.push(CameraPage);
   }
-  openMap(){
-    this.navCtrl.push(MapPage);
-  }
+
   openNews(){
     this.navCtrl.push(NewsPage);
   }

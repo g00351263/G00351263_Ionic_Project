@@ -29,6 +29,7 @@ export class CameraPage {
     console.log('ionViewDidLoad CameraPage');
   }
   openCamera(){
+  
     const options: CameraOptions = {
       quality: 50,
       destinationType: this.camera.DestinationType.DATA_URL,
@@ -42,6 +43,7 @@ export class CameraPage {
       this.base64Image = 'data:image/jpeg;base64,' + imageData;
       this.photos.push(this.base64Image);
       this.photos.reverse();
+      
     }, (err) => {
      // Handle error
     });
