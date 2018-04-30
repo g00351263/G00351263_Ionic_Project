@@ -1,0 +1,23 @@
+/*<!––Authour: Raja Naseer Ahmed Khan
+    Class  : 2nd Year B.Sc Software Development
+    email  :  g00351263@gmit.ie
+->*/
+---------------------------------------------------------------
+About the Authour :
+
+	My Name is Raja Naseer Ahmed Khan, Studying at GMIT in 2nd year and Doing this project app as part of Ionic Mobile App Module.
+---------------------------------------------------------------
+
+About the App:
+	
+	App contains Irish News and Camera Photo taking functionality. API keys are used to get fresh json data over the internet. hence, all Irish news are current and uptodated each time is app refreshed.
+---------------------------------------------------------------
+
+App Contains:
+
+About, Contact, Home, Camera and News Pages.
+---------------------------------------------------------------
+
+How To Use App :
+
+Click the corrosponding section and it will navigate you to desired link.
