@@ -1,3 +1,8 @@
+/*<!––Authour: Raja Naseer Ahmed Khan
+    Class  : 2nd Year B.Sc Software Development
+    email  :  g00351263@gmit.ie
+->*/
+
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';

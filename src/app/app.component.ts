@@ -1,3 +1,8 @@
+/*<!––Authour: Raja Naseer Ahmed Khan
+    Class  : 2nd Year B.Sc Software Development
+    email  :  g00351263@gmit.ie
+->*/
+
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
